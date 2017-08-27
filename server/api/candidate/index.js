@@ -8,15 +8,15 @@ router.post('/candidate', (req, res) => {
   apiHelper.saveDoc(res, entityName, data);
 });
 
-router.get('/candidate', authenticate, (req, res) => {
+router.get('/candidate', (req, res) => {
   return apiHelper.getByList(req, res, entityName);
 });
 
-router.get('/candidate/:id', authenticate, (req, res) => {
+router.get('/candidate/:id', (req, res) => {
   return apiHelper.getById(req, res, entityName);
 });
 
-router.delete('/candidate/:id', authenticate, (req, res) => {
+router.delete('/candidate/:id', (req, res) => {
   return apiHelper.deleteById(req, res, entityName);
 });
 
