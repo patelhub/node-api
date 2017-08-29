@@ -10,15 +10,18 @@ const schema = {
         },
         "firstname": {
             "description": "FirstName of the user",
-            "type": "string"
+            "type": "string",
+            "pattern": "^[a-zA-Z]+$"
         },
         "lastname": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^[a-zA-Z]+$"
         },
         "aid": {
             "description": "Aadhaar Number",
             "type": "integer",
-            "pattern": "[0-9]{12}"
+            "minimum": 100000000000,
+            "maximum": 999999999999
         },
         "birthdate": {
             "type": "string",
