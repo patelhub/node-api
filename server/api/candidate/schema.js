@@ -18,7 +18,7 @@ const schema = {
         "aid": {
             "description": "Aadhaar Number",
             "type": "integer",
-            "pattern": "^\d{12}$"
+            "pattern": "[0-9]{12}"
         },
         "birthdate": {
             "type": "string",
