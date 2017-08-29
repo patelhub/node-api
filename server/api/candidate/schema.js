@@ -22,31 +22,32 @@ const schema = {
             "type": "integer",
             "minimum": 100000000000,
             "maximum": 999999999999
-        },
-        "birthdate": {
-            "type": "string",
-            "pattern": "^\d{1,2}\/\d{1,2}\/\d{4}$"
-        },
-        "gender": {
-            "type": "integer",
-            "enum": [0, 1, 2]
-        },
-        "education": {
-            "type": "integer",
-            "enum": [0, 1, 2, 3, 4]
-        },
-        "mobile": {
-            "type": "integer",
-            "pattern": "^\d{10}$"
-        },
-        "email": {
-            "type": "integer"
-        },
-        "password": {
-            "type": "string"
         }
     },
     "required": ["firstname", "lastname", "aid"]
 };
 
 module.exports = { schema };
+
+ // "birthdate": {
+        //     "type": "string",
+        //     "pattern": "^\d{1,2}\/\d{1,2}\/\d{4}$"
+        // },
+        // "gender": {
+        //     "type": "integer",
+        //     "enum": [0, 1, 2]
+        // },
+        // "education": {
+        //     "type": "integer",
+        //     "enum": [0, 1, 2, 3, 4]
+        // },
+        // "mobile": {
+        //     "type": "integer",
+        //     "pattern": "^\d{10}$"
+        // },
+        // "email": {
+        //     "type": "integer"
+        // },
+        // "password": {
+        //     "type": "string"
+        // }
