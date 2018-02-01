@@ -39,10 +39,14 @@ module.exports = {
             console.log(error);
         }
     },
-    saveDoc: (res, entityName, data) => {
+    saveDoc: (res, entityName, data, handler) => {
         var entity = new (getModel(entityName))(data);
         entity.save().then((item) => {
-            res.send({ 'data': item });
+            if (handler) {
+                handler(item);
+            } else {
+                res.send({ 'data': item });
+            }
         }, (e) => {
             res.status(400).send(e);
         });

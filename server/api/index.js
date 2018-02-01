@@ -2,12 +2,14 @@ const express = require('express');
 const user = require('./user');
 const todo = require('./todo');
 const candidate = require('./candidate');
+const razorpay = require('./razorpay');
 const schemaManager = require('./schemaManager');
 const router = express.Router();
 
 router.use('/', user);
 router.use('/', todo);
 router.use('/', candidate);
+router.use('/', razorpay);
 router.use('/', schemaManager);
 
 router.use(function (req, res, next) {

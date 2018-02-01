@@ -24,7 +24,10 @@ const schema = {
             "maximum": 999999999999
         }
     },
-    "required": ["firstname", "lastname", "aid"]
+    "required": ["firstname", "lastname", "aid"],
+    "errorMessages": {
+
+    }
 };
 
 module.exports = { schema };
