@@ -1,12 +1,12 @@
 {
   "test": {
     "PORT": 3000,
-    "MONGODB_URI": "mongodb://localhost:27017/node-one-test",
+    "MONGODB_URI": "mongodb://localhost:27017/node-api-test",
     "JWT_SECRET": "poijasdf98435jpgfdpoij3"
   },
   "development": {
     "PORT": 3311,
-    "MONGODB_URI": "mongodb://localhost:27017/node-one",
+    "MONGODB_URI": "mongodb://localhost:27017/node-api",
     "JWT_SECRET": "pojiaj234oi234oij234oij4"
   }
 }
